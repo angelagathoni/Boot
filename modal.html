@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Bootwork/css/bootstrap.css">
+    <link rel="stylesheet" href="Styling%20and%20sheet.css">
+
+</head>
+<body>
+<h2>Modal Example</h2>
+<!--Button to open modal-->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+    Form Modal
+</button>
+<!--The modal-->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--modal header-->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!--Modal body-->
+            <div class="modal-body">
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="usr">Name of book:</label>
+                        <input type="text" id="usr" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="bno">Book number:</label>
+                        <input type="number" id="bno" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="taken">Date taken:</label>
+                        <input type="date" id="taken" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="returned">Date returned:</label>
+                        <input type="date" id="returned" class="form-control">
+                    </div>
+                    <br>
+                    <h3 style="background-color: black">Subject</h3>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">English
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Kiswahili
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Physics
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Biology
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Chemistry
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="igarashi">Upload file</label>
+                        <input type="file" id="igarashi" class="form-control-file">
+                    </div>
+                    <button class="btn btn-secondary">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Bootwork/js/jquery.js"></script>
+<script src="Bootwork/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+</body>
+</html>
